@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Regions</title>
+</head>
+
+<body>
+    <h1>Regions</h1>
+
+    <a href="/">Home</a>
+    <a href="/api/state">State</a>
+    <a href="/api/district">District</a>
+    <a href="/api/login">Login</a>
+    <a href="/api/register">Register</a>
+
+    <form action="/regions" method="post">
+        <input type="text" name="name" placeholder="region" />
+        <input type="text" name="stateId" placeholder="stateId" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <%if(data===null) {%>
+        <p>
+            <%= message%>
+        </p>
+        <%} else {%>
+            <ol>
+                <%data.forEach((el)=> { %>
+                    <li>
+                        <%= el.name%>
+                    </li>
+                    <% })%>
+            </ol>
+            <%}%>
+
+            <h2>Delete State</h2>
+
+            <form action="/regionDelete" method="post">
+                <input type="text" name="name" placeholder="region name">
+                <button type="submit">Delete</button>
+            </form>
+</body>
+
+</html>

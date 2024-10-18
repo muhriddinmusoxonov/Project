@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Tashkent",
+        "stateId": 1
+    },
+    {
+        "id": 2,
+        "name": "Berlin",
+        "stateId": 2
+    },
+    {
+        "id": 4,
+        "name": "Farg'ona",
+        "stateId": 1
+    },
+    {
+        "id": 5,
+        "name": "Namangan",
+        "stateId": 1
+    }
+]

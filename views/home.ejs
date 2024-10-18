@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users</h1>
+
+    <a href="/api/state" class="a3">State</a>
+    <a href="/api/region" class="a3">Region</a>
+    <a href="/api/district">District</a>
+    <a href="/api/login">Login</a>
+    <a href="/api/register">Register</a>
+    <ol>
+        <% data.forEach((el) => { %>
+            <li> id: <%= el.id%>  name: <%= el.login%>  address: <%= el.address%></li>
+        <% }) %>
+    </ol>
+
+    <h2>Delete User</h2>
+    <form action="/userDelete" method="post">
+        <input type="text" name="id" placeholder="user id">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>

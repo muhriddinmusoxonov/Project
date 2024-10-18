@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <a href="/">Home</a>
+    <a href="/api/state" class="a3">State</a>
+    <a href="/api/region" class="a3">Region</a>
+    <a href="/api/district">District</a>
+    <a href="/api/register">Register</a>
+
+    <p><%= message%></p>
+
+    <form action="/login" method="post">
+        <input type="text" name="login" placeholder="login" />
+        <input type="password" name="password" placeholder="password" />
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
